@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# InvestSight AI
 
-## Getting Started
+AI-powered investment research platform built with Next.js, Google Gemini AI, and Tavily Search.
 
-First, run the development server:
+## Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🔗 (https://investsight-ai.vercel.app/)
+
+## GitHub Repository
+
+🔗 https://github.com/ParmandeepKaur/investsight-ai
+
+---
+
+## Overview
+
+InvestSight AI helps users evaluate publicly traded companies using AI-powered financial analysis.
+
+The application gathers recent market information using Tavily Search, analyzes the company with Google Gemini, and generates structured investment insights including strengths, weaknesses, risks, opportunities, confidence score, and an investment recommendation.
+
+---
+
+## Features
+
+- AI-powered company research
+- Real-time market information using Tavily Search
+- Executive Summary
+- Strength Analysis
+- Weakness Analysis
+- Risk Assessment
+- Opportunity Analysis
+- Investment Recommendation
+- Confidence Score
+- Responsive modern dashboard
+- Professional UI built with Tailwind CSS
+
+---
+
+## Tech Stack
+
+Frontend
+
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+
+Backend
+
+- Next.js API Routes
+
+AI
+
+- Google Gemini API
+
+Search
+
+- Tavily Search API
+
+Deployment
+
+- Vercel
+
+---
+
+## Architecture
+
+User
+
+↓
+
+Next.js Frontend
+
+↓
+
+API Route
+
+↓
+
+Tavily Search API
+
+↓
+
+Google Gemini AI
+
+↓
+
+Structured Investment Report
+
+↓
+
+Dashboard
+
+---
+
+## Folder Structure
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+app/
+├── api/
+│ └── research/
+│ └── route.ts
+├── page.tsx
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+lib/
+├── gemini.ts
+├── prompt.ts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+public/
 
-## Learn More
+package.json
 
-To learn more about Next.js, take a look at the following resources:
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+Clone the repository
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+git clone https://github.com/YOUR-USERNAME/investsight-ai.git
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Install dependencies
+
+```bash
+npm install
+```
+
+Create a `.env.local`
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+TAVILY_API_KEY=YOUR_TAVILY_API_KEY
+```
+
+Run
+npm run dev
+
+## Build
+
+npm run build
+
+## Future Improvements
+
+- Portfolio comparison
+- Historical stock analysis
+- Interactive financial charts
+- Multi-company comparison
+- LangGraph workflow integration
+- Watchlists
+- Earnings transcript analysis
+
+---
+
+## Author
+
+Parman
